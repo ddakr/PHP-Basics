@@ -1,29 +1,131 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    background-color: #333;
-    width: 100%;
+/* CSS Variables */
+:root {
+    --bmw-blue: #0066b1;
 }
-.navbar img {
-    width: 100%;
-    height: 50rem;
+/* Global Styles */
+body {
+    background: linear-gradient(#1a1a1a, #0d0d0d);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-.karty0{
+/* Navbar */
+.navbar {
+    background-color: #000000;
     display: flex;
-    gap: 1rem;
-    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--bmw-blue);
 }
-.karty1{
-    width: 300px;
-    height: 300px;
+/* Logo effect */
+.navbar img {
+    height: 5rem;
 }
-
+/* Logo hover effect */
+.navbar img:hover {
+    transform: scale(1.1);
+}
+/* Icons */
+.cart,
+.user {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.cart {
+    right: 5.5rem;
+}
+.user {
+    right: 1rem;
+}
+/* Hover effects for icons */
+.cart:hover,
+.user:hover {
+    color: var(--bmw-blue);
+    transform: scale(1.15);
+}
+/* parent container for cards */
+.karty0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+/* Card container */
+.karty1 {
+    width: 400px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+/* Hover effect for cards */
+.karty1:hover {
+    transform: translateY(-6px);
+    border-color: var(--bmw-blue);
+    box-shadow: 0 8px 20px rgba(0, 102, 177, 0.35);
+}
+/* Image styling */
 .karty1 img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    display: block;
+}
+/* Font styling */
+.karty1 h1 {
+    font-size: 2em;
+    padding: 1rem;
+    transition: font-size 0.3s;
+}
+/* Hover effect for font size */
+.karty1:hover h1 {
+    font-size: 1.5em;
+}
+/* Additional card for BMW F11 */
+.karty11 {
+    width: 400px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+/* Hover effect for BMW F11 card */
+.karty11:hover {
+    transform: translateY(-6px);
+    border-color: var(--bmw-blue);
+    box-shadow: 0 8px 20px rgba(0, 102, 177, 0.35);
+}
+/* Image styling for BMW F11 card */
+.karty11 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+/* Font styling for BMW F11 card */
+.karty11 h1 {
+    font-size: 2em;
+    padding: 1rem;
+    transition: font-size 0.3s;
+}
+/* Hover effect for font size in BMW F11 card */
+.karty11:hover h1 {
+    font-size: 1.5em;
 }
