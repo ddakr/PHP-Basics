@@ -83,7 +83,7 @@ body {
 .karty1 img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
     display: block;
 }
 /* Font styling */
@@ -116,7 +116,7 @@ body {
 .karty11 img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
     display: block;
 }
 /* Font styling for BMW F11 card */
