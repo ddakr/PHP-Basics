@@ -12,7 +12,7 @@ try {
     $query->execute();
 
     // Vypsání získáných dat z databáze
-    print_r($query->fetchAll());
+    $auta = $query->fetchAll();
 
 } catch (PDOException $e) {
 
@@ -20,3 +20,12 @@ try {
     echo $e->getMessage();
 }
 ?>
+<div class="karty0">
+    <?php foreach ($auta as $auto):?>
+        <div class="karty1">
+            <img src="<?php echo $auto['image']; ?>" alt="<?php echo $auto['name']; ?>">
+            <h1><?php echo $auto['name']; ?></h1>
+            <p><?php echo number_format($auto['Base_price'], 0, ',', ' '); ?> Kč</p>
+        </div>
+    <?php endforeach; ?>
+</div>
