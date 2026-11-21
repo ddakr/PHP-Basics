@@ -20,6 +20,29 @@ try {
     echo $e->getMessage();
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfigurator BMW</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+<div class="navbar">
+<div class="logo">
+    <a href="index.html">
+    <img src="bmw-logo.jpg" alt="Logo bmw">
+    </a>
+    </div>
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+    </div>
+</div>
 <div class="karty0">
     <?php foreach ($auta as $auto):?>
         <div class="karty1">
@@ -29,3 +52,6 @@ try {
         </div>
     <?php endforeach; ?>
 </div>
+    
+</body>
+</html>
