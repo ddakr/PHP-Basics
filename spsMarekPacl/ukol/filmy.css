@@ -1,0 +1,97 @@
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: #121212;
+            color: #eee;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 0 0 1rem;
+        }
+        .box {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        form p {
+            margin: 0 0 1rem;
+        }
+        label {
+            display: block;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+        input, select {
+            width: 100%;
+            margin-top: 0.3rem;
+            padding: 0.6rem;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1rem;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #0066b1;
+        }
+        button {
+            padding: 0.6rem 1.2rem;
+            background: #0066b1;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #0080e0;
+        }
+        button.smazat {
+            background: #b3261e;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+        }
+        button.smazat:hover {
+            background: #e53935;
+        }
+        .chyba {
+            background: #3b1a1a;
+            border: 1px solid #b3261e;
+            color: #ff8a80;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 0.7rem;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            color: #0099ff;
+        }
+        tr:hover td {
+            background: #262626;
+        }
+        .prumer {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+        .prumer strong {
+            color: #0099ff;
+        }
+
